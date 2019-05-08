@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Dmitrii Zhuravlev](https://up.htmlacademy.ru/htmlcss/25/user/14567).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Пудников](https://up.htmlacademy.ru/htmlcss/25/user/71418).
 
 ---
 
