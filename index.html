@@ -2,25 +2,75 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Нёрдс</title>
   </head>
   <body>
-    <header>
-      <img src="logo.png" alt="NЁRDS">
-      <nav>
-        <ul>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-heder-logo">
+          <img src="logo.png" alt="Логотип NЁRDS">
+        </a>
+        <ul class="site-navigation ">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
           <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
+        <ul class="cart">
+          <li class="cart-link"><a href="#">Корзина</a></li>
+        </ul>
       </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">Дизайн студия NЁRDS</h1>
+      <section class="slider">
 
+      </section>
+      <section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <h3>Веб-сайты</h3>
+            <p>Мир никогода не будет прежним после того как увидит ваш сайт!</p>
+            <a href="#">Заказать</a>
+          </li>
+          <li class="services-item">
+            <h3>Приложения</h3>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a href="#">Заказать</a>
+          </li>
+          <li class="services-item">
+            <h3>Презентации</h3>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
     </main>
-    <footer>
-
+    <footer class="main-footer">
+      <div class="social-buttons">
+        <ul class="social-buttons-list">
+          <li class="social-buttons-item">
+            <a href="#">
+              vk
+            </a>
+          </li>
+          <li class="social-buttons-item">
+            <a href="#">
+              f
+            </a>
+          </li>
+          <li class="social-buttons-item">
+            <a href="#">
+              instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-lead">
+        <b>Давайте дружить, это выгодно!</b>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </footer>
   </body>
 </html>
