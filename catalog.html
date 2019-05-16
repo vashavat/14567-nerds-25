@@ -5,104 +5,152 @@
     <title>Нёрдс: Готовые шаблоны</title>
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-heder-logo">
-          <img src="logo.png" alt="Логотип NЁRDS">
+    <header class="header">
+      <nav class="navigation">
+        <a class="heder-logo" href="index.html">
+          <img src="img/logo.png" alt="Логотип NЁRDS">
         </a>
-        <ul class="site-navigation ">
+        <ul class="navigation-list">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li class="navigation-current"><a>Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
-        <ul class="cart">
-          <li class="cart-link"><a href="#">Корзина</a></li>
+        <ul class="header-cart">
+          <li class="header-cart-link"><a href="#">Корзина</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Магазин готовых шаблонов</h1>
-      <section class="site-catalog">
-        <h2 class="visually-hidden">Список шаблонов</h2>
-        <ul class="site-catalog-list">
-          <li class="site-catalog-item">
-            <a href="#">
-              <img src="img/sedona.jpg" alt="Шаблон Sedona">
-            </a>
-            <h3>Sedona</h3>
-            <p>Информационный сайт для туристов</p>
-            <button type="button" name="button">9 900 руб.</button>
-          </li>
-          <li class="site-catalog-item">
-            <a href="#">
-              <img src="img/pink.jpg" alt="Шаблон Pink">
-            </a>
-          </li>
-          <li class="site-catalog-item">
-            <a href="#">
-              <img src="img/borodinski.jpg" alt="Шаблон Borodinski">
-            </a>
-          </li>
-          <li class="site-catalog-item">
-            <a href="#">
-              <img src="img/mishka.jpg" alt="Шаблон Mishka">
-            </a>
-          </li>
-          <li class="site-catalog-item">
-            <a href="#">
-              <img src="img/aplus.jpg" alt="Шаблон Aplus">
-            </a>
-          </li>
-          <li class="site-catalog-item">
-            <a href="#">
-              <img src="img/kvast.jpg" alt="Шаблон Кваст">
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="catalog-filter">
+    <main class="container">
+      <aside class="filter">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <ul class="filter-types-radio">
-          <li>
-            <span>Адаптивная</span>
-          </li>
-          <li>
-            <span>Фиксированная</span>
-          </li>
-          <li>
-            <span>Резиновая</span>
-          </li>
-        </ul>
-        <ul class="filter-types-checkin">
-          <li>
-            <span>Слайдер</span></li>
-          <li>
-            <span>Блок преимуществ</span></li>
-          <li>
-            <span>Новости</span></li>
-          <li>
-            <span>Галерея</span></li>
-          <li>
-            <span>Корзина</span></li>
-        </ul>
+        <section class="filter-block">
+          <p>Сетка:</p>
+          <ul class="filter-type-radio">
+            <li>
+              <input type="radio" name="Адаптивная" value="">
+            </li>
+            <li>
+              <input type="radio" name="Фиксированная" value="">
+            </li>
+            <li>
+              <input type="radio" name="Резиновая" value="">
+            </li>
+          </ul>
+        </section>
+        <section class="filter-block">
+          <p>Особенности:</p>
+          <ul class="filter-type-checkin">
+            <li>
+              <input type="checkbox" name="Слайдер" value="">
+            </li>
+            <li>
+              <input type="checkbox" name="Блок преимуществ" value="">
+            </li>
+            <li>
+              <input type="checkbox" name="Новости" value="">
+            </li>
+            <li>
+              <input type="checkbox" name="Галерея" value="">
+            </li>
+            <li>
+              <input type="checkbox" name="Корзина" value="">
+          </ul>
+        </section>
         <button type="button" name="button">Показать</button>
+      </aside>
+      <section class="catalog">
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <article class="catalog-card">
+              <a href="#">
+                <img src="img/sedona.jpg" alt="Шаблон Sedona">
+              </a>
+              <div class="catalog-card-hover">
+                <p>Sedona</p>
+                <h2 class="catalog-card-description">Информационный сайт для туристов</h2>
+                <button type="button" name="button">9 900 руб.</button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="catalog-card">
+              <a href="#">
+                <img src="img/pink.jpg" alt="Шаблон Pink">
+              </a>
+              <div class="catalog-card-hover">
+                <p>Pink App</p>
+                <h2 class="catalog-card-description">Продуктовый лендинг проиложения для iOS и Android</h2>
+                <button type="button" name="button">9 900 руб.</button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="catalog-card">
+              <a href="#">
+                <img src="img/barbershop.jpg" alt="Шаблон Barbershop">
+              </a>
+              <div class="catalog-card-hover">
+                <p>Barbershop</p>
+                <h2 class="catalog-card-description">Сайт салона красоты. Для мужчин, да</h2>
+                <button type="button" name="button">9 900 руб.</button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="catalog-card">
+              <a href="#">
+                <img src="img/mishka.jpg" alt="Шаблон Mishka">
+              </a>
+              <div class="catalog-card-hover">
+                <p>Mishka</p>
+                <h2 class="catalog-card-description">Интернет-магазин вязанных игрушек</h2>
+                <button type="button" name="button">9 900 руб.</button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="catalog-card">
+              <a href="#">
+                <img src="img/aplus.jpg" alt="Шаблон A Plus">
+              </a>
+              <div class="catalog-card-hover">
+                <p>A Plus</p>
+                <h2 class="catalog-card-description">Лендинг курсов повышения квалификации</h2>
+                <button type="button" name="button">9 900 руб.</button>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="catalog-card">
+              <a href="#">
+                <img src="img/kvast.jpg" alt="Шаблон Кваст">
+              </a>
+              <div class="catalog-card-hover">
+                <p>Кваст</p>
+                <h2 class="catalog-card-description">Промо-сайт производителя крафтового кваса</h2>
+                <button type="button" name="button">9 900 руб.</button>
+              </div>
+            </article>
+          </li>
+        </ul>
       </section>
     </main>
-    <footer class="main-footer">
-      <div class="social-buttons">
-        <ul class="social-buttons-list">
-          <li class="social-buttons-item">
+    <footer class="footer">
+      <div class="social">
+        <ul class="social-list">
+          <li class="social-item">
             <a href="#">
               vk
             </a>
           </li>
-          <li class="social-buttons-item">
+          <li class="social-item">
             <a href="#">
               f
             </a>
           </li>
-          <li class="social-buttons-item">
+          <li class="social-item">
             <a href="#">
               instagram
             </a>
@@ -110,7 +158,7 @@
         </ul>
       </div>
       <div class="footer-lead">
-        <b>Давайте дружить, это выгодно!</b>
+        <p>Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
