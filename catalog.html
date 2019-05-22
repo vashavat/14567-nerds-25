@@ -7,14 +7,14 @@
   <body>
     <header class="header">
       <nav class="navigation">
-        <a class="heder-logo" href="index.html">
+        <a class="header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="67" alt="Логотип NЁRDS">
         </a>
         <ul class="navigation-list">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li class="navigation-current"><a>Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="navigation-item"><a href="#">Студия</a></li>
+          <li class="navigation-item"><a href="#">Клиенты</a></li>
+          <li class="navigation-item navigation-current"><a>Магазин</a></li>
+          <li class="navigation-item"><a href="#">Контакты</a></li>
         </ul>
         <ul class="header-cart">
           <li class="header-cart-link"><a href="#">Корзина</a></li>
@@ -24,40 +24,27 @@
     <main class="container">
       <aside class="filter">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
-        <section class="filter-block">
-          <p>Сетка:</p>
-          <ul class="filter-type-radio">
-            <li>
-              <input type="radio" name="Адаптивная" value="">
-            </li>
-            <li>
-              <input type="radio" name="Фиксированная" value="">
-            </li>
-            <li>
-              <input type="radio" name="Резиновая" value="">
-            </li>
-          </ul>
-        </section>
-        <section class="filter-block">
-          <p>Особенности:</p>
-          <ul class="filter-type-checkin">
-            <li>
-              <input type="checkbox" name="Слайдер" value="">
-            </li>
-            <li>
-              <input type="checkbox" name="Блок преимуществ" value="">
-            </li>
-            <li>
-              <input type="checkbox" name="Новости" value="">
-            </li>
-            <li>
-              <input type="checkbox" name="Галерея" value="">
-            </li>
-            <li>
-              <input type="checkbox" name="Корзина" value="">
-          </ul>
-        </section>
-        <button type="button" name="button">Показать</button>
+        <form action="#">
+          <section class="filter-block">
+            <p>Сетка:</p>
+            <ul class="filter-type-radio">
+              <li><label><input type="radio" name="grid" value="Адаптивная">Адаптивная</label></li>
+              <li><label><input type="radio" name="grid" value="Фиксированная">Фиксированная</label></li>
+              <li><label><input type="radio" name="grid" value="Резиновая">Резиновая</label></li>
+            </ul>
+          </section>
+          <section class="filter-block">
+            <p>Особенности:</p>
+            <ul class="filter-type-checkin">
+              <li><label><input type="checkbox" name="features" value="Слайдер">Слайдер</label></li>
+              <li><label><input type="checkbox" name="features" value="Блок преимуществ">Блок преимуществ</label></li>
+              <li><label><input type="checkbox" name="features" value="Новости">Новости</label></li>
+              <li><label><input type="checkbox" name="features" value="Галерея">Галерея</label></li>
+              <li><label><input type="checkbox" name="features" value="Корзина">Корзина</label></li>
+            </ul>
+          </section>
+          <button type="button" name="button">Показать</button>
+        </form>
       </aside>
       <section class="catalog">
         <h1 class="page-title">Магазин готовых шаблонов</h1>
@@ -140,21 +127,9 @@
     <footer class="footer">
       <div class="social">
         <ul class="social-list">
-          <li class="social-item">
-            <a href="#">
-              vk
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="#">
-              f
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="#">
-              instagram
-            </a>
-          </li>
+          <li class="social-item"><a href="#">vk</a></li>
+          <li class="social-item"><a href="#">f</a></li>
+          <li class="social-item"><a href="#">instagram</a></li>
         </ul>
       </div>
       <div class="footer-lead">
